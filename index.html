@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Harin Jung</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <style>
+    body {
+      font-family: courier;
+      font-size: 25px;
+      line-height: 32px;
+      background-color: rgb(0, 122, 255);
+      color: whitesmoke;
+      padding: 0px 30px;
+    }
+
+    .bg {
+      background-color: whitesmoke;
+      color: rgb(0, 122, 255);
+    }
+
+    .bottomleft {
+      position: fixed;
+      bottom: 20px;
+      left: 30px;
+    }
+
+    .bottomright {
+      position: fixed;
+      bottom: 60px;
+      right: 30px;
+      font-size: 150px;
+    }
+
+    mark {
+      background-color: whitesmoke;
+      color: rgb(0, 122, 255);
+    }
+
+    ul, #myUL {
+  list-style-type: none;
+}
+
+#myUL {
+  margin: 0;
+  padding: 0;
+}
+
+.caret {
+  cursor: pointer;
+  -webkit-user-select: none; /* Safari 3.1+ */
+  -moz-user-select: none; /* Firefox 2+ */
+  -ms-user-select: none; /* IE 10+ */
+  user-select: none;
+}
+
+.caret::before {
+  content: "\25B6";
+  color: whitesmoke;
+  display: inline-block;
+}
+
+.caret-down::before {
+  -ms-transform: rotate(90deg); /* IE 9 */
+  -webkit-transform: rotate(90deg); /* Safari */'
+  transform: rotate(90deg);
+}
+
+.nested {
+  display: none;
+}
+
+.active {
+  display: block;
+}
+
+    a:link {
+      color: white;
+      background-color: transparent;
+      text-decoration: none;
+    }
+
+    a:visited {
+      color: white;
+      background-color: transparent;
+      text-decoration: none;
+    }
+
+    a:hover {
+      color: white;
+      background-color: transparent;
+      text-decoration: underline;
+    }
+
+    a:active {
+      color: white;
+      background-color: transparent;
+      text-decoration: none;
+    }
+
+
+  </style>
+</head>
+
+<body>
+
+  <p>
+    <div class="bg">Last login: Fri May 1 11:53:09 on Harin Jung</div><br>
+
+    harinjg 🁢 info<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;This is Harin's class website. <br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;I flow around html, css, php, javascript, and Internet world...<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;I also expand to write, thinking about what metadata is embeded in my life and how... <br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Click my projects below and explore them...<br><br>
+
+    harinjg 🁢 cd Networks_and_Transaction<br><br>
+
+    harinjg@Networks_and_Transaction 🁢 pwd<br>
+    /Users/desktop/1yr/Networks_and_Transaction<br><br>
+
+    harin@Networks_and_Transaction 🁢 ls<br>
+
+    <ul id="myUL">
+  <li><span class="caret">&nbsp;&nbsp;&nbsp;&nbsp;Void</span><br>
+    <ul class="nested">
+      <li>Boys' love (as known as Yaoi) is a genre of fictional media originating in Japan that features homoerotic relationships between male characters.
+        Boys' love is mostly about the sex with the minimal storyline. Some Boys' love researchers say that Boys' love involves the sexual fantasy of heterosexual women.
+        Two protagonists in Yaoi are both biologically males, but they are different from each other physically and sexually,
+and simultaneously mimic the relationship between a man and woman. </li>
+</ul>
+
+
+<a href="./assets/index.html" target="_blank">▶︎&nbsp;&nbsp;&nbsp;&nbsp;Trail</a><br>
+<a href="http://yaoihole.com" target="_blank">▶︎&nbsp;&nbsp;&nbsp;&nbsp;Packet</a><br>
+<a href="./assets/mid-pt.pdf" download>▶︎&nbsp;&nbsp;&nbsp;&nbsp;Site</a><br>
+
+
+
+    <div class="bottomleft">
+      <mark>^M</mark>
+      <a href="mailto:harin.jung@yale.edu">Message</a>
+
+      <mark>⌘F5</mark>
+      To spell
+
+      <mark>⌘M</mark>
+      Hide
+
+      <mark>⌘W</mark>
+      Exit
+
+    </div>
+
+  </p>
+
+  <script>
+  var toggler = document.getElementsByClassName("caret");
+  var i;
+
+  for (i = 0; i < toggler.length; i++) {
+    toggler[i].addEventListener("click", function() {
+      this.parentElement.querySelector(".nested").classList.toggle("active");
+      this.classList.toggle("caret-down");
+    });
+  }
+  </script>
+
+</body>
+
+</html>
